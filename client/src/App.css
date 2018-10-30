@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  width: 420px;
+  margin: 0 auto;
+}
+
+input {
+  padding: .5rem;
+  border-radius: .25rem;
+  border: 2px solid gray;
+  height: 1.4rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: black;
+}
+
+.txStatus {
+  padding: .5rem;
+  border-radius: 0 0 .25rem .25rem;
+  border: 2px solid gray;
+  width: 100%;
+  margin-top: -.18rem;
+}
+
+.txStatus.pending {
+  border-color: black;
+  background: lightgray;
+  color: black;
+}
+
+.txStatus.error {
+  border-color: darkred;
+  background: bisque;
+  color: darkred;
+}
+
+.txStatus.success {
+  border-color: darkgreen;
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.txError {
+  color: darkred;
+  margin-top: .5rem;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
